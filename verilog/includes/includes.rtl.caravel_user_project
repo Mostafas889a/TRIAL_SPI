@@ -14,7 +14,13 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Caravel user project includes
--v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/user_project.v
 
- 
+# CF_SPI IP includes
+-v $(USER_PROJECT_VERILOG)/../ip/CF_SPI/hdl/rtl/CF_SPI.v
+-v $(USER_PROJECT_VERILOG)/../ip/CF_SPI/hdl/rtl/spi_master.v
+-v $(USER_PROJECT_VERILOG)/../ip/CF_SPI/hdl/rtl/bus_wrappers/CF_SPI_WB.v
+
+# CF_IP_UTIL includes
+-v $(USER_PROJECT_VERILOG)/../ip/CF_IP_UTIL/hdl/cf_util_lib.v
